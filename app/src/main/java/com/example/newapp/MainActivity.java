@@ -38,13 +38,15 @@ public class MainActivity extends AppCompatActivity {
         car.setAnimation(topAnim);
         textView.setAnimation(bottomAnim);
 
+
+        //calling new activity
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent (MainActivity.this,Login.class);
                 startActivity(intent);
                 finish();
-            }
+        }
         },SPLASH_SCREEN);
 
     }
